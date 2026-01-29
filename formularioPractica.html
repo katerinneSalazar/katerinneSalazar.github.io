@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://ncoge.com/phps/formulario.php" method="post" enctype="multipart/form-data">
+        <table width="100%">
+        <tr>
+            <td valign="top">
+        <fieldset>
+            <legend><strong>Datos personales:</strong></legend>
+          Nombre <br/>
+          <input type="text" name="nombre" value="" size="20" maxlength="30" />
+          <br/>
+          Apellidos <br/>
+          <input type="text" name="apellidos" value="" size="50" maxlength="80" />
+          <br/>
+          Correo: <br/>
+          <input type="text" name="email" value="" size="50" maxlength="80" />
+          <br/>
+          Hobbies: <br/>
+          <textarea name="Hobbies" size="200"></textarea><br/>
+        </fieldset>
+            </td> 
+            <td>
+            <fieldset>
+            <legend>Idioma</legend>
+         puntúa tu nivel del 1 al 5: <br/>
+            Inglés <selectedcontention>
+            1<input type="radio" name="ingles" value="1" /> 
+            2<input type="radio" name="ingles" value="2" />
+            3<input type="radio" name="ingles" value="3" /> 
+            4<input type="radio" name="ingles" value="4" /> 
+            5<input type="radio" name="ingles" value="5" /> 
+            <br/>
+            aleman </selectedcontention>
+            1<input type="radio" name="aleman" value="1" /> 
+            2<input type="radio" name="aleman" value="2" />
+            3<input type="radio" name="aleman" value="3" /> 
+            4<input type="radio" name="aleman" value="4" /> 
+            5<input type="radio" name="aleman" value="5" /> 
+            <br/>
+            Frances <selectedcontention>
+            1<input type="radio" name="frances" value="1" /> 
+            2<input type="radio" name="frances" value="2" /> 
+            3<input type="radio" name="frances" value="3" /> 
+            4<input type="radio" name="frances" value="4" /> 
+            5<input type="radio" name="frances" value="5" /> 
+            <br/>
+        </fieldset>
+                  <fieldset> <legend><strong>Domino los siguientes programas: </strong></legend>
+                  <table width="100%" border="0" align="center">
+                      <tr align="center">
+            <legend>Domino los siguientes programas</legend>
+            writer <input type="checkbox" name="programas[]" value="writer" />
+            Base   <input type="checkbox" name="programas[]" value="base" />
+            Calc   <input type="checkbox" name="programas[]" value="calc" />
+            Impress <input type="checkbox" name="programas[]" value="impress" />
+                        </tr>
+                    </table>
+        </fieldset>
+             <fieldset>
+            <legend>Trabajo con el siguiente Sistema Operativo</legend>
+            <select id="sistema_operativo" name="sistema_operativo">
+                <option value="" selected="selected">- selecciona -</option>
+                <option value="windows">Windows</option>
+                <option value="linux">Linux</option>
+                <option value="macos">MacOS</option>
+            </select>
+        </fieldset>
+        </td>
+        </tr>
+        <tr> 
+             <td colspan="2" align="center" >
+                <input name="Enviar" type="reset"  value="Reiniciar"/>&nbsp;
+             <input name="Enviar2" type="image" src="images/go.png" value="Enviar"/></td>
+          </tr>
+     </table>
+    </form>
+</body>
+</html>
